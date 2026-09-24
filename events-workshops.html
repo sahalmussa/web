@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique - Events & Workshops</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee-selection.html">Coffee Selection</a></li>
+                <li><a href="brewing-equipment.html">Brewing Equipment</a></li>
+                <li><a href="events-workshops.html">Events & Workshops</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="special-offers.html">Special Offers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Events & Workshops</h1>
+        <div class="product-grid"> <!-- Reusing grid for events -->
+            <div class="product">
+                <img src="images/Capture1.jpg" alt="Coffee Tasting">
+                <h3>Coffee Tasting Session</h3>
+                <p>Date: Oct 10, 2025. Taste unique blends.</p>
+            </div>
+            <div class="product">
+                <img src="images/CoffeeTastingWorkshop-2.png" alt="Brewing Class">
+                <h3>Brewing Class</h3>
+                <p>Date: Oct 17, 2025. Learn brewing methods.</p>
+            </div>
+            <div class="product">
+                <h3>Meet the Roaster</h3>
+                <p>Date: Oct 24, 2025. Q&A with our roaster.</p>
+            </div>
+        </div>
+        <h2>Register</h2>
+        <form action="mailto:info@beanboutique.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <!-- Plugin 3: reCAPTCHA for security -->
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> <!-- Placeholder key -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bean Boutique</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
